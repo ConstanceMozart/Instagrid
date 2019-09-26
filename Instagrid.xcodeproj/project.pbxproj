@@ -12,6 +12,8 @@
 		737C0815233D03E600AE1DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737C0813233D03E600AE1DE3 /* Main.storyboard */; };
 		737C0817233D03E700AE1DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737C0816233D03E700AE1DE3 /* Assets.xcassets */; };
 		737C081A233D03E700AE1DE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737C0818233D03E700AE1DE3 /* LaunchScreen.storyboard */; };
+		737C0826233D07BF00AE1DE3 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 737C0825233D07BF00AE1DE3 /* Delm-Medium.otf */; };
+		737C0828233D07CB00AE1DE3 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 737C0827233D07CA00AE1DE3 /* ThirstySoftRegular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		737C0816233D03E700AE1DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		737C0819233D03E700AE1DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		737C081B233D03E700AE1DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737C0825233D07BF00AE1DE3 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
+		737C0827233D07CA00AE1DE3 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		737C080E233D03E600AE1DE3 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
-				737C080F233D03E600AE1DE3 /* AppDelegate.swift */,
-				737C0811233D03E600AE1DE3 /* ViewController.swift */,
-				737C0813233D03E600AE1DE3 /* Main.storyboard */,
-				737C0816233D03E700AE1DE3 /* Assets.xcassets */,
-				737C0818233D03E700AE1DE3 /* LaunchScreen.storyboard */,
+				737C0823233D058E00AE1DE3 /* View */,
+				737C0822233D058600AE1DE3 /* Controler */,
+				737C0821233D057900AE1DE3 /* Supporting Files */,
 				737C081B233D03E700AE1DE3 /* Info.plist */,
 			);
 			path = Instagrid;
+			sourceTree = "<group>";
+		};
+		737C0821233D057900AE1DE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				737C0824233D075700AE1DE3 /* Fonts */,
+				737C080F233D03E600AE1DE3 /* AppDelegate.swift */,
+				737C0816233D03E700AE1DE3 /* Assets.xcassets */,
+				737C0818233D03E700AE1DE3 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		737C0822233D058600AE1DE3 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				737C0811233D03E600AE1DE3 /* ViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		737C0823233D058E00AE1DE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				737C0813233D03E600AE1DE3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		737C0824233D075700AE1DE3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				737C0825233D07BF00AE1DE3 /* Delm-Medium.otf */,
+				737C0827233D07CA00AE1DE3 /* ThirstySoftRegular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +162,8 @@
 			files = (
 				737C081A233D03E700AE1DE3 /* LaunchScreen.storyboard in Resources */,
 				737C0817233D03E700AE1DE3 /* Assets.xcassets in Resources */,
+				737C0828233D07CB00AE1DE3 /* ThirstySoftRegular.otf in Resources */,
+				737C0826233D07BF00AE1DE3 /* Delm-Medium.otf in Resources */,
 				737C0815233D03E600AE1DE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68P6W828BZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instagrid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.constancemasniaud.Instagrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +342,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68P6W828BZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instagrid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.constancemasniaud.Instagrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
